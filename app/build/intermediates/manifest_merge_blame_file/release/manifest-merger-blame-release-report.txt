@@ -1,0 +1,690 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.digital.steno"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:3:2-64
+11-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:3:19-61
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:4:2-76
+12-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:4:19-73
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:5:2-77
+13-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:5:19-74
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:6:2-78
+14-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:6:19-75
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:7:2-68
+15-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:7:19-65
+16    <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- Android package visibility setting -->
+16-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:25:5-79
+16-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:25:22-76
+17    <queries>
+17-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:28:5-44:15
+18
+19        <!-- For browser content -->
+20        <intent>
+20-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:31:9-37:18
+21            <action android:name="android.intent.action.VIEW" />
+21-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:17-69
+21-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:25-66
+22
+23            <category android:name="android.intent.category.BROWSABLE" />
+23-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:17-78
+23-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:27-75
+24
+25            <data android:scheme="https" />
+25-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:39:17-42:51
+25-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:42:21-48
+26        </intent>
+27        <!-- End of browser content -->
+28        <!-- For CustomTabsService -->
+29        <intent>
+29-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:40:9-42:18
+30            <action android:name="android.support.customtabs.action.CustomTabsService" />
+30-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:41:13-90
+30-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:41:21-87
+31        </intent>
+32        <!-- End of CustomTabsService -->
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.WAKE_LOCK" />
+35-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] C:\Users\user\.gradle\caches\transforms-3\579e4ce8b79c1958931f07999de43724\transformed\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:25:5-68
+35-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] C:\Users\user\.gradle\caches\transforms-3\579e4ce8b79c1958931f07999de43724\transformed\jetified-play-services-measurement-sdk-api-20.1.2\AndroidManifest.xml:25:22-65
+36    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+36-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:27:5-81
+36-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:27:22-78
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+37-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:28:5-77
+37-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:28:22-74
+38
+39    <application
+39-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:8:2-154:16
+40        android:allowBackup="true"
+40-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:9:3-29
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.7.0] C:\Users\user\.gradle\caches\transforms-3\20044ddcef319c4cb3ba51a61a7f6c86\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+42        android:icon="@drawable/app_icon"
+42-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:10:3-36
+43        android:label="@string/app_name"
+43-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:11:3-35
+44        android:requestLegacyExternalStorage="true"
+44-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:12:3-46
+45        android:theme="@style/AppTheme"
+45-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:14:3-34
+46        android:usesCleartextTraffic="true" >
+46-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:13:3-38
+47        <activity
+47-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:16:3-29:14
+48            android:name="com.digital.steno.MainActivity"
+48-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:17:4-32
+49            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+49-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:18:4-97
+50            android:exported="true"
+50-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:24:4-27
+51            android:hardwareAccelerated="true"
+51-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:19:4-38
+52            android:screenOrientation="portrait"
+52-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:22:4-40
+53            android:supportsPictureInPicture="true"
+53-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:20:4-43
+54            android:theme="@style/AppTheme.FullScreen"
+54-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:21:4-46
+55            android:windowSoftInputMode="stateHidden" >
+55-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:23:4-45
+56            <intent-filter>
+56-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:25:4-28:20
+57                <action android:name="android.intent.action.MAIN" />
+57-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:26:5-57
+57-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:26:13-54
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:27:5-65
+59-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:27:15-62
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:30:3-36:48
+63            android:name="com.digital.steno.HomeActivity"
+63-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:31:4-32
+64            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+64-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:32:4-97
+65            android:hardwareAccelerated="true"
+65-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:33:4-38
+66            android:screenOrientation="portrait"
+66-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:35:4-40
+67            android:supportsPictureInPicture="true"
+67-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:34:4-43
+68            android:windowSoftInputMode="stateHidden" />
+68-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:36:4-45
+69        <activity
+69-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:37:3-42:43
+70            android:name="com.digital.steno.AddNoteActivity"
+70-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:38:4-35
+71            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+71-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:39:4-97
+72            android:hardwareAccelerated="true"
+72-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:40:4-38
+73            android:screenOrientation="portrait"
+73-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:42:4-40
+74            android:supportsPictureInPicture="true" />
+74-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:41:4-43
+75        <activity
+75-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:43:3-48:43
+76            android:name="com.digital.steno.SettingsActivity"
+76-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:44:4-36
+77            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+77-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:45:4-97
+78            android:hardwareAccelerated="true"
+78-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:46:4-38
+79            android:screenOrientation="portrait"
+79-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:48:4-40
+80            android:supportsPictureInPicture="true" />
+80-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:47:4-43
+81        <activity
+81-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:49:3-54:43
+82            android:name="com.digital.steno.ViewNoteActivity"
+82-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:50:4-36
+83            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+83-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:51:4-97
+84            android:hardwareAccelerated="true"
+84-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:52:4-38
+85            android:screenOrientation="portrait"
+85-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:54:4-40
+86            android:supportsPictureInPicture="true" />
+86-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:53:4-43
+87        <activity
+87-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:55:3-60:43
+88            android:name="com.digital.steno.InfoActivity"
+88-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:56:4-32
+89            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+89-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:57:4-97
+90            android:hardwareAccelerated="true"
+90-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:58:4-38
+91            android:screenOrientation="portrait"
+91-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:60:4-40
+92            android:supportsPictureInPicture="true" />
+92-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:59:4-43
+93        <activity
+93-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:61:3-66:43
+94            android:name="com.digital.steno.SecurityActivity"
+94-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:62:4-36
+95            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+95-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:63:4-97
+96            android:hardwareAccelerated="true"
+96-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:64:4-38
+97            android:screenOrientation="portrait"
+97-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:66:4-40
+98            android:supportsPictureInPicture="true" />
+98-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:65:4-43
+99        <activity
+99-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:67:3-72:43
+100            android:name="com.digital.steno.PinActivity"
+100-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:68:4-31
+101            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+101-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:69:4-97
+102            android:hardwareAccelerated="true"
+102-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:70:4-38
+103            android:screenOrientation="portrait"
+103-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:72:4-40
+104            android:supportsPictureInPicture="true" />
+104-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:71:4-43
+105        <activity
+105-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:73:3-78:43
+106            android:name="com.digital.steno.ResetActivity"
+106-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:74:4-33
+107            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+107-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:75:4-97
+108            android:hardwareAccelerated="true"
+108-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:76:4-38
+109            android:screenOrientation="portrait"
+109-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:78:4-40
+110            android:supportsPictureInPicture="true" />
+110-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:77:4-43
+111        <activity
+111-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:79:3-85:48
+112            android:name="com.digital.steno.LoginActivity"
+112-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:80:4-33
+113            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+113-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:81:4-97
+114            android:hardwareAccelerated="true"
+114-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:82:4-38
+115            android:screenOrientation="portrait"
+115-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:84:4-40
+116            android:supportsPictureInPicture="true"
+116-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:83:4-43
+117            android:windowSoftInputMode="stateHidden" />
+117-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:85:4-45
+118        <activity
+118-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:86:3-92:48
+119            android:name="com.digital.steno.ProfileActivity"
+119-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:87:4-35
+120            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+120-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:88:4-97
+121            android:hardwareAccelerated="true"
+121-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:89:4-38
+122            android:screenOrientation="portrait"
+122-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:91:4-40
+123            android:supportsPictureInPicture="true"
+123-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:90:4-43
+124            android:windowSoftInputMode="stateHidden" />
+124-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:92:4-45
+125        <activity
+125-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:93:3-99:48
+126            android:name="com.digital.steno.EmailResetActivity"
+126-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:94:4-38
+127            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+127-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:95:4-97
+128            android:hardwareAccelerated="true"
+128-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:96:4-38
+129            android:screenOrientation="portrait"
+129-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:98:4-40
+130            android:supportsPictureInPicture="true"
+130-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:97:4-43
+131            android:windowSoftInputMode="stateHidden" />
+131-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:99:4-45
+132        <activity
+132-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:100:3-106:48
+133            android:name="com.digital.steno.ChangeEmailActivity"
+133-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:101:4-39
+134            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+134-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:102:4-97
+135            android:hardwareAccelerated="true"
+135-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:103:4-38
+136            android:screenOrientation="portrait"
+136-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:105:4-40
+137            android:supportsPictureInPicture="true"
+137-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:104:4-43
+138            android:windowSoftInputMode="stateHidden" />
+138-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:106:4-45
+139        <activity
+139-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:107:3-112:43
+140            android:name="com.digital.steno.DebugActivity"
+140-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:108:4-33
+141            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+141-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:109:4-97
+142            android:hardwareAccelerated="true"
+142-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:110:4-38
+143            android:screenOrientation="portrait"
+143-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:112:4-40
+144            android:supportsPictureInPicture="true" />
+144-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:111:4-43
+145        <activity
+145-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:113:3-118:43
+146            android:name="com.digital.steno.AnnouncementsActivity"
+146-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:114:4-41
+147            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+147-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:115:4-97
+148            android:hardwareAccelerated="true"
+148-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:116:4-38
+149            android:screenOrientation="portrait"
+149-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:118:4-40
+150            android:supportsPictureInPicture="true" />
+150-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:117:4-43
+151        <activity
+151-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:119:3-125:48
+152            android:name="com.digital.steno.PrivacyPolicyActivity"
+152-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:120:4-41
+153            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+153-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:121:4-97
+154            android:hardwareAccelerated="true"
+154-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:122:4-38
+155            android:screenOrientation="portrait"
+155-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:124:4-40
+156            android:supportsPictureInPicture="true"
+156-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:123:4-43
+157            android:windowSoftInputMode="stateHidden" />
+157-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:125:4-45
+158        <activity
+158-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:126:3-129:55
+159            android:name="com.google.android.gms.ads.AdActivity"
+159-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:127:4-56
+160            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+160-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:128:4-113
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:52:13-37
+162            android:theme="@android:style/Theme.Translucent" />
+162-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:129:4-52
+163
+164        <meta-data
+164-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:130:3-132:60
+165            android:name="com.google.android.gms.version"
+165-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:131:4-49
+166            android:value="@integer/google_play_services_version" />
+166-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:132:4-57
+167        <meta-data
+167-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:133:3-135:60
+168            android:name="com.google.android.gms.ads.APPLICATION_ID"
+168-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:134:4-60
+169            android:value="ca-app-pub-3400558179771289~9082199745" />
+169-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:135:4-58
+170
+171        <provider
+171-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:136:3-140:30
+172            android:name="com.google.firebase.provider.FirebaseInitProvider"
+172-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:137:4-68
+173            android:authorities="com.digital.steno.firebaseinitprovider"
+173-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:138:4-64
+174            android:directBootAware="true"
+174-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\5482f43f871825030da2d23b59ef4f47\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+175            android:exported="false"
+175-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:139:4-28
+176            android:initOrder="100" />
+176-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:140:4-27
+177
+178        <service
+178-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:141:3-150:13
+179            android:name="com.google.firebase.components.ComponentDiscoveryService"
+179-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:142:4-75
+180            android:directBootAware="true"
+180-->[com.google.firebase:firebase-common:20.1.1] C:\Users\user\.gradle\caches\transforms-3\5482f43f871825030da2d23b59ef4f47\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+181            android:exported="false" >
+181-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:143:4-28
+182            <meta-data
+182-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:144:4-146:73
+183                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+183-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:145:5-97
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:146:5-70
+185            <meta-data
+185-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:147:4-149:73
+186                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+186-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:148:5-97
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:149:5-70
+188        </service>
+189
+190        <uses-library
+190-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:151:3-153:31
+191            android:name="org.apache.http.legacy"
+191-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:152:4-41
+192            android:required="false" />
+192-->D:\AndroidStudioProjects\Digital_Steno\app\src\main\AndroidManifest.xml:153:4-28
+193
+194        <activity
+194-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:27:9-44:20
+195            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+195-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:28:13-80
+196            android:excludeFromRecents="true"
+196-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:29:13-46
+197            android:exported="true"
+197-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:30:13-36
+198            android:launchMode="singleTask"
+198-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:31:13-44
+199            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+199-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:32:13-72
+200            <intent-filter>
+200-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:33:13-43:29
+201                <action android:name="android.intent.action.VIEW" />
+201-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:17-69
+201-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:25-66
+202
+203                <category android:name="android.intent.category.DEFAULT" />
+203-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:17-76
+203-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:27-73
+204                <category android:name="android.intent.category.BROWSABLE" />
+204-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:17-78
+204-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:27-75
+205
+206                <data
+206-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:39:17-42:51
+207                    android:host="firebase.auth"
+207-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:40:21-49
+208                    android:path="/"
+208-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:41:21-37
+209                    android:scheme="genericidp" />
+209-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:42:21-48
+210            </intent-filter>
+211        </activity>
+212        <activity
+212-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:45:9-62:20
+213            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+213-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:46:13-79
+214            android:excludeFromRecents="true"
+214-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:47:13-46
+215            android:exported="true"
+215-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:48:13-36
+216            android:launchMode="singleTask"
+216-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:49:13-44
+217            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+217-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:50:13-72
+218            <intent-filter>
+218-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:51:13-61:29
+219                <action android:name="android.intent.action.VIEW" />
+219-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:17-69
+219-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:25-66
+220
+221                <category android:name="android.intent.category.DEFAULT" />
+221-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:17-76
+221-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:27-73
+222                <category android:name="android.intent.category.BROWSABLE" />
+222-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:17-78
+222-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:27-75
+223
+224                <data
+224-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:39:17-42:51
+225                    android:host="firebase.auth"
+225-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:40:21-49
+226                    android:path="/"
+226-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:41:21-37
+227                    android:scheme="recaptcha" />
+227-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\user\.gradle\caches\transforms-3\2864a4ea321bf6cae5f6099d5559c7f6\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:42:21-48
+228            </intent-filter>
+229        </activity>
+230        <activity
+230-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\1051f63ae7b8b1b5602a32581b5c59d6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+231            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+231-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\1051f63ae7b8b1b5602a32581b5c59d6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+232            android:exported="false"
+232-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\1051f63ae7b8b1b5602a32581b5c59d6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+233            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+233-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\1051f63ae7b8b1b5602a32581b5c59d6\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+234
+235        <provider
+235-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:55:9-59:39
+236            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+236-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:56:13-76
+237            android:authorities="com.digital.steno.mobileadsinitprovider"
+237-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:57:13-73
+238            android:exported="false"
+238-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:58:13-37
+239            android:initOrder="100" />
+239-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:59:13-36
+240
+241        <service
+241-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:61:9-64:40
+242            android:name="com.google.android.gms.ads.AdService"
+242-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:62:13-64
+243            android:enabled="true"
+243-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:63:13-35
+244            android:exported="false" />
+244-->[com.google.android.gms:play-services-ads-lite:21.0.0] C:\Users\user\.gradle\caches\transforms-3\a8de26b56065336544dc1f9618f867b0\transformed\jetified-play-services-ads-lite-21.0.0\AndroidManifest.xml:64:13-37
+245
+246        <provider
+246-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\fa62d3853af8e6efd5616c42a87f4b7e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+247            android:name="androidx.startup.InitializationProvider"
+247-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\fa62d3853af8e6efd5616c42a87f4b7e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+248            android:authorities="com.digital.steno.androidx-startup"
+248-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\fa62d3853af8e6efd5616c42a87f4b7e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+249            android:exported="false" >
+249-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\fa62d3853af8e6efd5616c42a87f4b7e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+250            <meta-data
+250-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\fa62d3853af8e6efd5616c42a87f4b7e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+251                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+251-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\fa62d3853af8e6efd5616c42a87f4b7e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+252                android:value="androidx.startup" />
+252-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-3\fa62d3853af8e6efd5616c42a87f4b7e\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+253            <meta-data
+253-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:36:13-38:52
+254                android:name="androidx.work.WorkManagerInitializer"
+254-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:37:17-68
+255                android:value="androidx.startup" />
+255-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:38:17-49
+256            <meta-data
+256-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\e8cc3a38c42aaed71e4b1c656d0b5350\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+257                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+257-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\e8cc3a38c42aaed71e4b1c656d0b5350\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+258                android:value="androidx.startup" />
+258-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-3\e8cc3a38c42aaed71e4b1c656d0b5350\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+259        </provider>
+260
+261        <service
+261-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:41:9-46:35
+262            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+262-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:42:13-88
+263            android:directBootAware="false"
+263-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:43:13-44
+264            android:enabled="@bool/enable_system_alarm_service_default"
+264-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:44:13-72
+265            android:exported="false" />
+265-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:45:13-37
+266        <service
+266-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:47:9-53:35
+267            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+267-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:48:13-84
+268            android:directBootAware="false"
+268-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:49:13-44
+269            android:enabled="@bool/enable_system_job_service_default"
+269-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:50:13-70
+270            android:exported="true"
+270-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:51:13-36
+271            android:permission="android.permission.BIND_JOB_SERVICE" />
+271-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:52:13-69
+272        <service
+272-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:54:9-59:35
+273            android:name="androidx.work.impl.foreground.SystemForegroundService"
+273-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:55:13-81
+274            android:directBootAware="false"
+274-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:56:13-44
+275            android:enabled="@bool/enable_system_foreground_service_default"
+275-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:57:13-77
+276            android:exported="false" />
+276-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:58:13-37
+277
+278        <receiver
+278-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:61:9-66:35
+279            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+279-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:62:13-88
+280            android:directBootAware="false"
+280-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:63:13-44
+281            android:enabled="true"
+281-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:64:13-35
+282            android:exported="false" />
+282-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:65:13-37
+283        <receiver
+283-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:67:9-77:20
+284            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+284-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:68:13-106
+285            android:directBootAware="false"
+285-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:69:13-44
+286            android:enabled="false"
+286-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:70:13-36
+287            android:exported="false" >
+287-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:71:13-37
+288            <intent-filter>
+288-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:73:13-76:29
+289                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+289-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:17-87
+289-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:74:25-84
+290                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+290-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:17-90
+290-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:75:25-87
+291            </intent-filter>
+292        </receiver>
+293        <receiver
+293-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:78:9-88:20
+294            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+294-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:79:13-104
+295            android:directBootAware="false"
+295-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:80:13-44
+296            android:enabled="false"
+296-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:81:13-36
+297            android:exported="false" >
+297-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:82:13-37
+298            <intent-filter>
+298-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:84:13-87:29
+299                <action android:name="android.intent.action.BATTERY_OKAY" />
+299-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:17-77
+299-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:85:25-74
+300                <action android:name="android.intent.action.BATTERY_LOW" />
+300-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:17-76
+300-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:86:25-73
+301            </intent-filter>
+302        </receiver>
+303        <receiver
+303-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:89:9-99:20
+304            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+304-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:90:13-104
+305            android:directBootAware="false"
+305-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:91:13-44
+306            android:enabled="false"
+306-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:92:13-36
+307            android:exported="false" >
+307-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:93:13-37
+308            <intent-filter>
+308-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:95:13-98:29
+309                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+309-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:17-83
+309-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:96:25-80
+310                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+310-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:17-82
+310-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:97:25-79
+311            </intent-filter>
+312        </receiver>
+313        <receiver
+313-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:100:9-109:20
+314            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+314-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:101:13-103
+315            android:directBootAware="false"
+315-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:102:13-44
+316            android:enabled="false"
+316-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:103:13-36
+317            android:exported="false" >
+317-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:104:13-37
+318            <intent-filter>
+318-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:106:13-108:29
+319                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+319-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:17-79
+319-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:107:25-76
+320            </intent-filter>
+321        </receiver>
+322        <receiver
+322-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:110:9-121:20
+323            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+323-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:111:13-88
+324            android:directBootAware="false"
+324-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:112:13-44
+325            android:enabled="false"
+325-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:113:13-36
+326            android:exported="false" >
+326-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:114:13-37
+327            <intent-filter>
+327-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:116:13-120:29
+328                <action android:name="android.intent.action.BOOT_COMPLETED" />
+328-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:117:17-79
+328-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:117:25-76
+329                <action android:name="android.intent.action.TIME_SET" />
+329-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:17-73
+329-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:118:25-70
+330                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+330-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:17-81
+330-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:119:25-78
+331            </intent-filter>
+332        </receiver>
+333        <receiver
+333-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:122:9-131:20
+334            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+334-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:123:13-99
+335            android:directBootAware="false"
+335-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:124:13-44
+336            android:enabled="@bool/enable_system_alarm_service_default"
+336-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:125:13-72
+337            android:exported="false" >
+337-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:126:13-37
+338            <intent-filter>
+338-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:128:13-130:29
+339                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+339-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:17-98
+339-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:129:25-95
+340            </intent-filter>
+341        </receiver>
+342        <receiver
+342-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:132:9-142:20
+343            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+343-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:133:13-78
+344            android:directBootAware="false"
+344-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:134:13-44
+345            android:enabled="true"
+345-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:135:13-35
+346            android:exported="true"
+346-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:136:13-36
+347            android:permission="android.permission.DUMP" >
+347-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:137:13-57
+348            <intent-filter>
+348-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:139:13-141:29
+349                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+349-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:17-88
+349-->[androidx.work:work-runtime:2.7.0] C:\Users\user\.gradle\caches\transforms-3\c8b29b19ad2b8c3b120e77dc60683bed\transformed\work-runtime-2.7.0\AndroidManifest.xml:140:25-85
+350            </intent-filter>
+351        </receiver>
+352
+353        <service
+353-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\8f1ccc334d353c476c6d109cead7cddc\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+354            android:name="androidx.room.MultiInstanceInvalidationService"
+354-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\8f1ccc334d353c476c6d109cead7cddc\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+355            android:directBootAware="true"
+355-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\8f1ccc334d353c476c6d109cead7cddc\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+356            android:exported="false" />
+356-->[androidx.room:room-runtime:2.2.5] C:\Users\user\.gradle\caches\transforms-3\8f1ccc334d353c476c6d109cead7cddc\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+357    </application>
+358
+359</manifest>
