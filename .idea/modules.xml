@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Digital_Steno.iml" filepath="$PROJECT_DIR$/.idea/modules/Digital_Steno.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Digital_Steno.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Digital_Steno.iml" filepath="$PROJECT_DIR$/.idea/Digital_Steno.iml" />
     </modules>
   </component>
 </project>
